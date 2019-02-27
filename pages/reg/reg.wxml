@@ -1,0 +1,52 @@
+<!--pages/reg/reg.wxml-->
+<view class="page" style="background-image:url(https://www.chinamed-ce.com/huiyi/UpLoadFile/{{detail.txt}})">
+  <view class="user_pic">
+    <image src="{{personInfo.avatarUrl}}" class="user_face"></image>
+  </view>
+  <view class="user_name">{{personInfo.nickName}}</view>
+  <view class="user_form">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="user_input">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="姓名" name="w_name" placeholder-class="placeholder" />
+      </view>
+      <view class="user_input">
+        <i class="fa fa-male"></i>
+        <picker bindchange="genderChange" name="w_gender" value="{{gender[gender_index]}}" range="{{gender}}">
+          <view class="user_select">{{gender[gender_index]}}</view>
+        </picker>
+      </view>
+      <view class="user_input">
+        <i class="fa fa-tag"></i>
+        <input type="number" placeholder="年龄" name="w_age" placeholder-class="placeholder" />
+      </view>
+      <view class="user_input">
+        <i class="fa fa-phone"></i>
+        <input type="number" placeholder="手机号" name="w_mobile" placeholder-class="placeholder" />
+      </view>
+      <view class="user_input">
+        <i class="fa fa-home"></i>
+        <input type="text" placeholder="工作单位" name="w_company" placeholder-class="placeholder" />
+      </view>
+      <view class="user_input">
+        <i class="fa fa-graduation-cap"></i>
+        <picker bindchange="titleChange" name="w_title" value="{{title[title_index]}}" range="{{title}}">
+          <view class="user_select">{{title[title_index]}}</view>
+        </picker>
+      </view>
+      <view class="user_input" hidden='true'>
+        <input type="text" name="w_avatarUrl" value="{{personInfo.avatarUrl}}" />
+        <input type="text" name="w_nickName" value="{{personInfo.nickName}}" />
+      </view>
+      <view class="user_input" wx:if="{{flag == 0}}">
+        <button type="primary" formType="submit" class="button input1" bindtap="login">注册签到</button>
+      </view>
+      <view wx:if="{{flag == 0}}">
+        <view class="hint">请正确输入所有信息</view>
+      </view>
+      <view wx:if="{{flag == 1}}">
+        <view class="hint2">注册签到成功，ID：{{userid}}</view>
+      </view>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/video/video",
+    "pages/reg/reg",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/contact/contact",
+    "pages/user/user",
+    "pages/richeng/richeng"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#1aad19",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/reg/reg",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_se.png",
+        "text": "注册签到"
+      },
+      {
+        "pagePath": "pages/richeng/richeng",
+        "iconPath": "images/punchteam.png",
+        "selectedIconPath": "images/punchteam_se.png",
+        "text": "会议日程"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/plaza.png",
+        "selectedIconPath": "images/plaza_se.png",
+        "text": "最新消息"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "iconPath": "images/self.png",
+        "selectedIconPath": "images/self_se.png",
+        "text": "联系我们"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+/* pages/user/user.wxss */
+page { background-color: white;}
+.text_txt { padding:30rpx; overflow: hidden;}
+.text_content { font-size: 36rpx; line-height: 48rpx; overflow: hidden; color:#666;}

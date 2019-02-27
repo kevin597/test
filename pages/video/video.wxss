@@ -1,0 +1,83 @@
+/* pages/video/video.wxss */
+page {
+background-color:#F8F8F8;
+padding: 0;
+-webkit-user-select:none;
+user-select:none;
+width:100%;
+overflow-x:hidden;
+}
+.weui-cells{
+  margin-top: 20rpx;
+  text-align: left;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+}
+.weui-cell {
+padding:0 10px;
+position:relative;
+display:-webkit-box;
+display:-webkit-flex;
+display:flex;
+-webkit-box-align:center;
+-webkit-align-items:center;
+align-items:center;
+}
+
+input {
+display:block;
+height:1.4rem;
+text-overflow:clip;
+overflow:hidden;
+white-space:nowrap;
+font-family:UICTFontTextStyleBody;
+min-height:1.4rem;
+}
+.weui-cells {
+position:relative;
+background-color:#FFFFFF;
+line-height:3.2rem;
+font-size:16px;
+width: 100%;
+margin: 1em auto;
+height:2.8rem;
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+.page-section { display: block; margin: 0 auto;text-align:center;
+}
+.page-body { width:100%;
+flex-grow:1;
+overflow-x:hidden;
+ }
+video {
+width:300px;
+height:225px;
+display:inline-block;
+line-height:0;
+overflow:hidden;
+position:relative;
+}
+.weui-input {
+  height:2.8rem;
+  width: 100%;
+  display: block;
+}
+
+.btn-area {
+margin-top:50rpx;
+box-sizing:border-box;
+width:100%;
+padding:0 30rpx;
+}

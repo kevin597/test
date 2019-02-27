@@ -1,0 +1,7 @@
+<!--pages/user/user.wxml-->
+<view class='text_txt' wx:if="{{detail.img == 2}}">
+   <text class='text_content'>{{detail.txt}}</text>
+</view>
+<view class='text_txt' wx:if="{{detail.img == 1}}">
+   <image mode='widthFix' src="https://www.chinamed-ce.com/huiyi/UpLoadFile/{{detail.txt}}"></image>
+</view>

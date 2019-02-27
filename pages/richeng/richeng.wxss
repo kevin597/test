@@ -1,0 +1,5 @@
+/* pages/richeng/richeng.wxss */
+page { background-color: white;}
+.text_txt { overflow: hidden;}
+.text_content { font-size: 36rpx; line-height: 48rpx; overflow: hidden; color:#666;padding:30rpx;}
+.text_txt image { display: block;  width: 100%;}
